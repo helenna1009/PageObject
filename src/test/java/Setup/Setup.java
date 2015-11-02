@@ -29,7 +29,7 @@ public class Setup {
         //Change system property of webdriver manager to download latest 2.9 version of chromedriver
         System.setProperty("wdm.chromeDriverVersion", "2.9");
         System.out.println("Getting the driver instance");
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        System.setProperty("chromedriver", "/usr/local/share/chromedriver");
         if (driver == null) {
             System.out.println("Starting a service...");
             ChromeDriverService service = new ChromeDriverService.Builder()
